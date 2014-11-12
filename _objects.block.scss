@@ -1,0 +1,52 @@
+/*
+  Example:
+
+  <div class="block">
+    <div class="block__image"></div>
+    <div class="block__body"></div>
+  </div>
+*/
+
+#block,
+.block,
+#block__image,
+.block__image,
+#block__body,
+.block__body {
+  display: block;
+}
+
+#block__image,
+.block__image {
+  margin-bottom: rem($spacing-unit);
+
+  #block--half > &,
+  .block--half > & {
+    margin-bottom: rem($spacing-unit--half);
+  }
+
+  #block--quarter > &,
+  .block--quarter > & {
+    margin-bottom: rem($spacing-unit--quarter);
+  }
+
+  #block--double > &,
+  .block--double > & {
+    margin-bottom: rem($spacing-unit--double);
+  }
+
+  #block--quadruple > &,
+  .block--quadruple > & {
+    margin-bottom: rem($spacing-unit--quadruple);
+  }
+}
+
+#block--right,
+.block--right {
+  text-align: right;
+}
+
+#block--center,
+.block--center {
+  text-align: center;
+}
