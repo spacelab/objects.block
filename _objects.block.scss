@@ -1,3 +1,10 @@
+$block-spacing:             $base-spacing !default;
+
+$block-spacing--quarter:    $block-spacing / 4 !default;
+$block-spacing--half:       $block-spacing / 2 !default;
+$block-spacing--double:     $block-spacing * 2 !default;
+$block-spacing--quadruple:  $block-spacing * 4 !default;
+
 #block,
 .block,
 #block__image,
@@ -9,26 +16,26 @@
 
 #block__image,
 .block__image {
-  margin-bottom: rem($spacing-unit);
+  margin-bottom: rem($block-spacing);
 
   #block--half > &,
   .block--half > & {
-    margin-bottom: rem($spacing-unit--half);
+    margin-bottom: rem($block-spacing--half);
   }
 
   #block--quarter > &,
   .block--quarter > & {
-    margin-bottom: rem($spacing-unit--quarter);
+    margin-bottom: rem($block-spacing--quarter);
   }
 
   #block--double > &,
   .block--double > & {
-    margin-bottom: rem($spacing-unit--double);
+    margin-bottom: rem($block-spacing--double);
   }
 
   #block--quadruple > &,
   .block--quadruple > & {
-    margin-bottom: rem($spacing-unit--quadruple);
+    margin-bottom: rem($block-spacing--quadruple);
   }
 }
 
