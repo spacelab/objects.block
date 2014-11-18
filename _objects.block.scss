@@ -5,46 +5,46 @@ $block-spacing--half:       $block-spacing / 2 !default;
 $block-spacing--double:     $block-spacing * 2 !default;
 $block-spacing--quadruple:  $block-spacing * 4 !default;
 
-#block,
+%block,
 .block,
-#block__image,
+%block__image,
 .block__image,
-#block__body,
+%block__body,
 .block__body {
   display: block;
 }
 
-#block__image,
+%block__image,
 .block__image {
   margin-bottom: rem($block-spacing);
 
-  #block--half > &,
+  %block--half > &,
   .block--half > & {
     margin-bottom: rem($block-spacing--half);
   }
 
-  #block--quarter > &,
+  %block--quarter > &,
   .block--quarter > & {
     margin-bottom: rem($block-spacing--quarter);
   }
 
-  #block--double > &,
+  %block--double > &,
   .block--double > & {
     margin-bottom: rem($block-spacing--double);
   }
 
-  #block--quadruple > &,
+  %block--quadruple > &,
   .block--quadruple > & {
     margin-bottom: rem($block-spacing--quadruple);
   }
 }
 
-#block--right,
+%block--right,
 .block--right {
   text-align: right;
 }
 
-#block--center,
+%block--center,
 .block--center {
   text-align: center;
 }
